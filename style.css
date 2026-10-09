@@ -1,0 +1,120 @@
+body {
+    background-color: antiquewhite;
+    color: black;
+    font-family: "Crafty Girls";
+}
+
+body.dark {
+    background: black;
+    color: antiquewhite;
+    font-family: "Jacquard 12";
+}
+
+body.dark {
+
+    a {
+        color: aquamarine;
+    }
+
+    #dark-mode-toggle {
+        background-color: black;
+        color: antiquewhite;
+        font-family: "Jacquard 12";
+    }
+
+}
+
+#dark-mode-toggle {
+    background-color: antiquewhite;
+    color: black;
+    font-family: "Crafty Girls";
+}
+
+
+
+.link-button:hover {
+    background-color: aqua;
+}
+
+#intro-section {
+    position: relative;
+    background-color: crimson
+}
+
+#intro-section>h1 {
+    margin-left: 20%;
+}
+
+#profile-section {
+    display: flex;
+    flex-direction: row;
+}
+
+#Profilbild {
+    width: 50%;
+    max-width: 125px;
+    margin: 5px;
+}
+
+#Katze {
+    width: 80%;
+   
+
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+}
+
+#skill-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#footer {
+    display:flex;
+    flex-direction:row;
+    align-items:end;
+}
+.skill {
+    border: 2px dotted rgb(96 139 168);
+    margin: 5px;
+    padding: 5px;
+}
+
+#Katze2 {
+    width: 30%;
+    margin: 5%;
+    max-width: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+@media (min-width:441px) {
+    #intro-section {
+        background-color: blueviolet;
+    }
+}
+
+footer {
+    background-color: chocolate;
+}
+
+/*fonts*/
+.jacquard-12-regular {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.crafty-girls-regular {
+    font-family: "Crafty Girls", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

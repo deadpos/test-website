@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kontakt</title>
+    <meta name="author" content="Kiino Schoch" name="description" content="Linktree" />
+    <link rel="stylesheet" href="linktree.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Jacquard+12&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <main>
+        <button id="dark-mode-toggle">wechsle auf die dunkle Seite der Macht</button>
+        <section id="intro-section">
+            <h1>Kiino Schoch</h1>
+        </section>
+
+        <section id=profile-section>
+            <img id="Profilbild" src="mee.jpg" alt="Profilbild von Kiino Schoch">
+            <p> hier kommt ein tolles Zitat hin oder so </p>
+        </section>
+
+        <section id="links-section">
+            <h2>Meine Links:</h2>
+            <section id="links">
+                <a href="https://www.linkedin.com/in/kiino-schoch-024552293/" class="link-button"
+                    target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/kiino-schoch-024552293/" class="link-button"
+                    target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/kiino-schoch-024552293/" class="link-button"
+                    target="_blank">Linkedin</a>
+            </section>
+        </section>
+
+        <section id="cat-section">
+            <img id="Katze" src="mimi.jpg" alt="verschowmmene Katze auf Terasse">
+        </section>
+
+        <section id="bio-section">
+            <h2>Bio</h2>
+            <p>Hier kommt meine spannende Biographie hin</p>
+        </section>
+
+        <section id="skill-section">
+            <a class="skill">skill 1</a>
+            <a class="skill">skill 2</a>
+            <a class="skill">skill 3</a>
+            <a class="skill">skill 4</a>
+            <a class="skill">skill 5</a>
+            <a class="skill">skill 6</a>
+            <a class="skill">skill 7</a>
+        </section>
+
+
+        <script>
+            //Javascript
+            const firstname = "Kiino"
+            const lastname = "Schoch"
+            const fullname = `${firstname} ${lastname}`
+            const year = "2026"
+            const yearofbirth = "2003"
+            const age = year - yearofbirth
+            const animal = ['cat', 'fish', 'bug', 'bat', 'icebear', 'sheep']
+            const randomAnimal = animal[Math.floor(Math.random() * animal.length)]
+
+
+            const darkModeToggle = document.getElementById("dark-mode-toggle");
+            darkModeToggle.addEventListener("click", () => {
+                document.body.classList.toggle("dark")
+                if (document.body.classList.contains("dark")) {
+                    darkModeToggle.textContent = "eyebleach";
+                } else {
+                    darkModeToggle.textContent = "wechsle auf die dunkle Seite der Macht";
+                }
+                const intro = document.getElementById("intro-section")
+                intro.innerHTML = `Hello ${randomAnimal}`
+
+            })
+
+
+        </script>
+</body>
+</main>
+<footer>
+    <section id="footer">
+        <section>
+            <h2> Kontakt</h2>
+            <a href="mailto:kiino.schoch@outlook.com">kiino.schoch@outlook.com</a>
+        </section>
+        <img id="Katze2" src="SAM_0807.JPG" alt="Katze eingekugelt auf einer Decke">
+    </section>
+</footer>
+
+</html>
